@@ -53,17 +53,17 @@ public class PaymentApi {
 
 	public static Map<String, String> toMap(Map<String, Object> map) {
 		Map<String, String> end = new HashMap<>();
-		/*map.forEach((a, b) -> {
+		map.forEach((a, b) -> {
 			end.put(a, b + "");
-		});*/
+		});
 		return end;
 	}
 
 	public static Map<String, Object> toMapObj(Map<String, String> map) {
 		Map<String, Object> end = new HashMap<>();
-		/*map.forEach((a, b) -> {
+		map.forEach((a, b) -> {
 			end.put(a, b);
-		});*/
+		});
 		return end;
 	}
 

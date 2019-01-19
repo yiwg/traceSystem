@@ -1,7 +1,7 @@
 package com.tmsps.traceback.util.http;
 
 import java.io.UnsupportedEncodingException;
-//import java.util.Base64;
+import java.util.Base64;
 import java.util.Map;
 
 import org.apache.http.HttpEntity;
@@ -117,7 +117,7 @@ public class HttpJsonTools {
 			HttpGet get2 = new HttpGet(url2);
 			String admin = "admin:12345";
 			get2.setHeader("If-Modified-Since", "0");
-			byte[] encode=null;//Base64.getEncoder().encode(admin.getBytes());
+			byte[] encode=Base64.getEncoder().encode(admin.getBytes());
 			String e = "";
 			try {
 				e = new String(encode,"utf-8");
